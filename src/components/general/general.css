@@ -1,0 +1,36 @@
+body {
+    color: white !important;
+  }
+  
+
+  body {
+    background-color: black;
+  }
+  
+
+  .button {
+    background-color: red;
+    color: white !important;
+    padding: 20px;
+  }
+
+
+  .text-field {
+    border-bottom: 12px solid red;
+  }
+
+
+.input-wrapper,
+.select-input-wrapper,
+.button,
+.search-bar {
+  padding: 11px;
+}
+
+
+.select-input {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    position: relative;
+  }
