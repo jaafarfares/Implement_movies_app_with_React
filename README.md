@@ -2,7 +2,7 @@
 
 
 
-### In this project we will build our pocket movie app in which we will keep track of our favorite movies and set up a watch later list. You will use the ReactJs knowledge that you accumulated in previous projects to build the interface and show data from an API.
+### Our movie app is a React-based web application that leverages API integration to provide users with a seamless movie browsing experience. Using React components such as Authentication, Dashboard, MovieCard, and more, the app allows users to explore and discover movies from a vast collection. With features like search, filters, and personalized sections for managing favorite movies and creating a watch later list, our app makes it easy for users to find and interact with their preferred films. By integrating an API, we ensure that the app stays up to date with the latest movie information and provides users with accurate and comprehensive movie data.
 
 ### The main components we created for the app include:
 
