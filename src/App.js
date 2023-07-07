@@ -3,12 +3,43 @@ import React, { useState, useEffect } from 'react';
 import Input from './components/general/Input';
 import SelectInput from './components/general/SelectInput';
 import Button from './components/general/Button';
-import SearchBar from './components/general/SearchBar';
+import SearchBar from './components/general/SearchBar'; 
+import Authentication from './routes/auth/Authentication';
+import Dashboard from './routes/dashboard/Dashboard';
 import './App.css';
 
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userUsername, setUserUsername] = useState('');
 
+  useEffect(() => {
+    const token = localStorage.getItem('token');
 
- function App() {
+    if (token) {
+      setTimeout(() => {
+        setIsLoggedIn(true);
+        setUserUsername('JohnDoe');
+      }, 1000);
+    }
+  }, []);
+
+  return (
+    <div className="App">
+      {isLoggedIn ? (
+        <Dashboard username={userUsername} />
+      ) : (
+        <Authentication
+          setIsLoggedIn={setIsLoggedIn}
+          setUserUsername={setUserUsername}
+        />
+      )}
+    </div>
+  );
+};
+
+export default App;
+
+ /* function App() {
   const [username, setUsername] = useState('');
   const [selectedOption, setSelectedOption] = useState('');
   const [searchTitle, setSearchTitle] = useState('');
@@ -48,9 +79,9 @@ import './App.css';
 
     </div>
   );
-}
+} 
 
-export default App; 
+export default App; */
 
 
 

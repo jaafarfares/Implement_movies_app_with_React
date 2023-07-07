@@ -2,7 +2,7 @@ import React from 'react';
 import './general.css';
 
 const SelectInput = ({
-  label, // Update the label prop value here
+  label, 
   options,
   multiple,
   className,
